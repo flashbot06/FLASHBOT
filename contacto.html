@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - FLASHBOT ⚡</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Canvas animado de fondo -->
+    <canvas id="bg-canvas"></canvas>
+
+    <header>
+        <div class="logo">🚀 FLASHBOT</div>
+        <p>"Construidos para ganar"</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="componentes.html">Componentes</a>
+        <a href="proyecto.html">Proyectos</a>
+        <a href="contacto.html" class="active">Contacto</a>
+    </nav>
+
+    <main class="container contact-container">
+        
+        <section class="contact-header">
+            <span class="badge-hero">⚡ COMUNÍCATE CON NOSOTROS</span>
+            <h1>¿Tienes un proyecto de robótica en mente?</h1>
+            <p class="subtitle">
+                Escríbenos para colaboraciones, soporte técnico sobre prototipos o consultas sobre nuestro equipo.
+            </p>
+        </section>
+
+        <div class="contact-grid">
+            
+            <!-- TARJETAS DE INFORMACIÓN RÁPIDA -->
+            <div class="contact-info">
+                
+                <!-- Tarjeta de WhatsApp con botón directo -->
+                <div class="info-card whatsapp-card">
+                    <div class="icon-box">💬</div>
+                    <div>
+                        <h3>WhatsApp</h3>
+                        <p>311 219 5664</p>
+                        <a href="https://wa.me/573112195664?text=Hola%20equipo%20FLASHBOT,%20tengo%20una%20consulta" target="_blank" class="btn-whatsapp">
+                            Hablar por WhatsApp 🟢
+                        </a>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="icon-box">📍</div>
+                    <div>
+                        <h3>Ubicación</h3>
+                        <p>Sogamoso, Boyacá - Colombia</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="icon-box">📧</div>
+                    <div>
+                        <h3>Correo Electrónico</h3>
+                        <p>flashbot06@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="icon-box">🤖</div>
+                    <div>
+                        <h3>Especialidad</h3>
+                        <p>Sistemas y robotica</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FORMULARIO DE CONTACTO -->
+            <section class="contact-form-wrapper">
+                <form id="contact-form" class="contact-form">
+                    <h2>Enviarnos un mensaje ✉️</h2>
+
+                    <div class="input-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" name="asunto" placeholder="Ej: Consulta sobre el robot o sensores" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos más sobre lo que necesitas..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Enviar por Web 🚀</button>
+                    
+                    <p id="form-status" class="form-status"></p>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Construidos para ganar 🤖🔥</p>
+    </footer>
+</body>
+</html>

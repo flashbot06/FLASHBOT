@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLASHBOT ⚡</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <canvas id="bg-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none;"></canvas>
+    <header>
+        <div class="logo">🚀 FLASHBOT</div>
+        <p>"Construidos para ganar"</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="componentes.html">Componentes</a>
+        <a href="proyecto.html">Proyectos</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main class="grid-container">
+        <section class="card">
+            <div class="icon">👀</div>
+            <h2>SENSORES</h2>
+            <p>Un sensor es un dispositivo tecnológico que detecta cambios o estímulos físicos o químicos en el entorno y los transforma en una señal eléctrica interpretable.</p>
+            <img src="https://www.taloselectronics.com/cdn/shop/collections/TA0616_1_987adb48-4369-432d-ab8d-25fa18b46a54_1280x1280.png?v=1588887695">
+        </section>
+
+        <section class="card">
+            <div class="icon">🧠</div>
+            <h2>MICROCONTROLADOR</h2>
+            <p>Es una pequeña computadora que procesa información y toma decisiones, este controla el funcionamiento de dispositivos electrónicos mediante un programa instalado.</p>
+            <img src="https://chicagodist.com/cdn/shop/articles/Nrs9NTIgGha0vBSKxclZtmL6yqdZ5M251613396097_1200x900.jpg?v=1614185525" alt="Microcontrolador">
+        </section>
+
+        <section class="card">
+            <div class="icon">⚡</div>
+            <h2>ACTUADORES</h2>
+            <p>Es un dispositivo que convierte señales eléctricas en movimiento o acción física así como mover un motor o encender un mecanismo.</p>
+            <img src="https://cdn-shop.adafruit.com/970x728/1438-00.jpg">
+        </section>
+    </main>
+
+    <section class="navigation-section">
+        <h2>¿QUÉ COMPONENTES UTILIZAMOS NOSOTROS?</h2>
+        <div class="button-group">
+            <a href="#sensor" class="btn">SENSORES</a>
+            <a href="#microcontroladores" class="btn">MICROCONTROLADORES</a>
+            <a href="#actuadores" class="btn">ACTUADORES</a>
+        </div>
+    </section>
+
+    <section id="sensor" class="sensor-section">
+        <div class="sensor-header">
+            <span class="tech-tag">TECNOLOGÍA DE NAVEGACIÓN</span>
+            <h2>SENSORES DE PISTA</h2>
+            <p>Estrategias ópticas distintas para dos tipos de control</p>
+        </div>
+
+        <div class="robots-wrapper">
+            <div class="robot-card border-blue">
+                <div class="card-glow glow-blue"></div>
+                <div class="robot-badge">ROBOT 01</div>
+                <h3>2× TCRT5000 Individuales</h3>
+                <p>
+                    Para nuestro primer robot utilizamos <strong>2 sensores TCRT5000 independientes</strong> en la parte frontal. Elegimos esta configuración porque nos permite mantener una estructura ultraligera, compacta y ágil. Al ajustarse la distancia física entre ellos según la pista, logramos lecturas digitales directas y correcciones inmediatas con el menor peso posible.
+                </p>
+                <img src="https://electronicamonteria.com/cdn/shop/files/TCRT5000.png?v=1745421607&width=1445">
+                <div class="spec-list">
+                    <span>⚡ Ligero</span>
+                    <span>⚡ Respuesta Rápida</span>
+                </div>
+            </div>
+
+            <div class="robot-card border-purple">
+                <div class="card-glow glow-purple"></div>
+                <div class="robot-badge badge-purple">ROBOT 02</div>
+                <h3>Módulo 5 Canales</h3>
+                <p>
+                    Para nuestro segundo robot integramos un <strong>módulo TCRT5000 de 5 canales</strong>. Esta placa nos otorga una lectura continua de la línea, permitiendo calcular exactamente qué tan desviado está el robot del centro. Es la clave para implementar algoritmos avanzados de control <strong>PID</strong> y tomar curvas cerradas a máxima velocidad.
+                </p>
+                <img src="imagenes/sensor.png">
+                <div class="spec-list">
+                    <span>🎯 Alta Precisión</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="microcontroladores" class="sensor-section">
+        <div class="sensor-header">
+            <span class="tech-tag">PROCESAMIENTO Y CONTROL</span>
+            <h2>MICROCONTROLADORES</h2>
+            <p>El cerebro electrónico detrás de la toma de decisiones de cada robot</p>
+        </div>
+
+        <div class="robots-wrapper">
+            <div class="robot-card border-blue">
+                <div class="card-glow glow-blue"></div>
+                <div class="robot-badge">ROBOT 01</div>
+                <h3>BBC micro:bit v2.0</h3>
+                <p>
+                    Para nuestro primer robot utilizamos la placa <strong>micro:bit v2.0</strong>. Su procesador ARM Cortex-M4 integra sensores como acelerómetro y brújula, permitiéndonos ejecutar algoritmos eficientes en una tarjeta compacta y de bajo consumo.
+                </p>
+                <img src="https://res.cloudinary.com/rs-designspark-live/image/upload/c_limit,w_790/f_auto/v1/article/micro_bit_V2_YELLOW_25c1a361f014d849c4ab864e5516ff28ac372b7e">
+                <div class="spec-list">
+                    <span>⚡ Compacto</span>
+                </div>
+            </div>
+
+            <div class="robot-card border-purple">
+                <div class="card-glow glow-purple"></div>
+                <div class="robot-badge badge-purple">ROBOT 02</div>
+                <h3>Arduino Uno </h3>
+                <p>
+                    En nuestro segundo robot integramos un <strong>Arduino Uno</strong>. Su microcontrolador ATmega328P ofrece una arquitectura sólida, flexibilidad en pines de entrada/salida y excelente compatibilidad para procesar múltiples lecturas de sensores en tiempo real.
+                </p>
+                <img src="https://electronicamonteria.com/cdn/shop/files/ARDUINOUNO.png?v=1743174435">
+                <div class="spec-list">
+                    <span>⚙️ Robusto</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="actuadores" class="sensor-section">
+        <div class="sensor-header">
+            <span class="tech-tag">SISTEMA DE TRACCIÓN</span>
+            <h2>ACTUADORES Y DRIVERS</h2>
+            <p>Sistemas encargados de convertir las señales eléctricas en movimiento de pista</p>
+        </div>
+
+        <div class="robots-wrapper">
+            <div class="robot-card border-blue">
+                <div class="card-glow glow-blue"></div>
+                <div class="robot-badge">ROBOT 01</div>
+                <h3>Motorreductores N20</h3>
+                <p>
+                    El primer robot está equipado con <strong>micromotorreductores N20</strong>. Destacan por su excelente relación potencia-peso y su caja de engranajes metálica, brindando un torque elevado en un tamaño sumamente reducido para arranques explosivos.
+                </p>
+                <img src="https://mvelectronica.s3.us-east-2.amazonaws.com/productos/MM30HP/61201dd74fb84.webp">
+                <div class="spec-list">
+                    <span>⚡ Engranajes Metálicos</span>
+                    <span>🏋️ Alto Torque / Bajo Peso</span>
+                </div>
+            </div>
+
+            <div class="robot-card border-purple">
+                <div class="card-glow glow-purple"></div>
+                <div class="robot-badge badge-purple">ROBOT 02</div>
+                <h3>Motoreductores DC 6V </h3>
+                <p>
+                Para el segundo robot usamos <strong>motoreductores de corriente continua de 6V</strong> este da la <strong>fuerza y velocidad necesarias para el seguimiento de pista.</strong> Destacan por su excelente tracción y su caja de engranajes integrada, brindando un torque constante y una respuesta rápida ante los cambios de dirección requeridos en cada curva.
+                </p>
+                <img src="https://mvelectronica.s3.us-east-2.amazonaws.com/productos/MOT48A/6115a183bc3e0.webp">
+                <div class="spec-list">
+                    <span>⚡ Alimentación 6V DC</span>
+                    
+                </div>
+            </div>
+
+            <div class="robot-card border-purple">
+                <div class="card-glow glow-purple"></div>
+                <div class="robot-badge badge-purple">ROBOT 01 Y 02</div>
+                <h3>Puente H L298N</h3>
+                <p> Es el driver encargado de gestionar la potencia de los motores. Permite <strong>controlar el sentido de giro</strong> y ajustar la velocidad con precisión mediante <strong>modulación por ancho de pulso (PWM)</strong>, logrando las maniobras diferenciales clave para <strong>mantener al robot siempre sobre la línea</strong>.</p>
+                <img src="https://d229kd5ey79jzj.cloudfront.net/1063/images/1063_1_H.png" >
+                <div class="spec-list">
+                    <span>🎛️ Driver L298N</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Construidos para ganar 🤖🔥</p>
+    </footer>
+</body>
+</html>

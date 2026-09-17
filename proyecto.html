@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - FLASHBOT ⚡</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Canvas animado de fondo -->
+    <canvas id="bg-canvas"></canvas>
+
+    <header>
+        <div class="logo">🚀 FLASHBOT ⚡</div>
+        <p>"Construidos para ganar"</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="componentes.html">Componentes</a>
+        <a href="proyectos.html" class="active">Proyectos</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main class="container project-container">
+        
+        <section class="project-header">
+            <span class="badge-hero">🏎️ PRUEBAS Y COMPETENCIAS</span>
+            <h1>Nuestros Protptipos en Acción</h1>
+            <p class="subtitle">
+                Galería multimedia de pruebas en pista, calibración de sensores y desempeño de los robots seguidores de línea.
+            </p>
+        </section>
+
+        <!-- SECCIÓN DE VIDEOS DESTACADOS -->
+        <section class="video-section">
+            <h2 class="section-title">🎥 Videos en Pista (Pruebas de Velocidad)</h2>
+            
+            <div class="video-grid">
+                <!-- Video 1: Robot 01 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <!-- Reemplaza "videos/robot1_prueba.mp4" por la ruta de tu video o un embed de YouTube -->
+                        <video controls poster="imagenes/robot01.jpeg">
+                            <source src="videos/robot01.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <span class="robot-badge">ROBOT 01</span>
+                        <h3>Prueba de Agilidad y Sensores Dobles</h3>
+                        <p>Recorrido de prueba calibrando los sensores TCRT5000 individuales en curvas cerradas a velocidad media.</p>
+                    </div>
+                </div>
+
+                <!-- Video 2: Robot 02 -->
+                <div class="video-card border-purple">
+                    <div class="video-wrapper">
+                        <video controls poster="imagenes/robot02.jpeg">
+                            <source src="videos/robot02.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <span class="robot-badge badge-purple">ROBOT 02</span>
+                        <h3>Prueba de Control PID Avanzado</h3>
+                        <p>Demostración del módulo de 5 canales manteniendo el centro de la línea a máxima aceleración.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE GALERÍA DE FOTOS -->
+        <section class="gallery-section">
+            <h2 class="section-title">📸 Galería Fotográfica del Proyecto</h2>
+            
+            <div class="gallery-grid">
+                
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="imagenes/img2.jfif" alt="Chasis del Robot">
+                        <div class="gallery-overlay">
+                        </div>
+                    </div>
+                    <h4>Ensamblado</h4>
+                    <p></p>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="imagenes/img1.jfif" alt="Placa electrónica y conexiones">
+                        <div class="gallery-overlay">
+                        </div>
+                    </div>
+                    <h4>Cableado y Circuitos</h4>
+                    <p></p>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="imagenes/img3.jfif" alt="Pruebas en Pista de Competición">
+                        <div class="gallery-overlay">
+                        </div>
+                    </div>
+                    <h4>Ajuste de Sensores</h4>
+                    <p></p>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="imagenes/img4.jfif" alt="Equipo probando el prototipo">
+                        <div class="gallery-overlay">
+                        </div>
+                    </div>
+                    <h4>Cronometraje</h4>
+                    <p></p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Construidos para ganar 🤖🔥</p>
+    </footer>
+</body>
+</html>
